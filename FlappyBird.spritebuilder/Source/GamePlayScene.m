@@ -23,16 +23,16 @@ timeSinceObstacle += delta;
 }
 // delta ia approximately 1/60th of a second
 // check to see if two seconds have passed
-if(timeSinceObstacle>2.0f)
+if timeSinceObstacle > 2.0f
 
 {
     //add a new obstacle
-    [self addObstacle];
+   then [self addObstacle];
     //then reset the timer.
     timeSinceObstacle = 0.0f;
-    
-    // put update code here
 }
+    // put update code here
+
 
 // put new methods here
 - (void) touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{
