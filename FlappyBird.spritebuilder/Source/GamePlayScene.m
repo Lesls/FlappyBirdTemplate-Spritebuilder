@@ -17,8 +17,10 @@
     //this will be run every frame.
     //delta is the time that has elapsed since the last time it was run. 
 -(void)update:(CCTime)delta
+{
 //Increment thetime since the last obstacle was added
-timeSinceObstacle: += delta;
+timeSinceObstacle += delta;
+}
 // delta ia approximately 1/60th of a second
 // check to see if two seconds have passed
 if (timeSinceObstacle > 2.0f)
